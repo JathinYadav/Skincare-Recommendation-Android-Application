@@ -14,6 +14,11 @@ from nltk.corpus import stopwords
 import string
 import joblib
 
+import nltk
+
+nltk.download('stopwords')
+
+
 app = Flask(__name__)
 
 cred = credentials.Certificate("serviceAccountKey.json")
