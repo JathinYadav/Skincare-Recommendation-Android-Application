@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_nav_brands_to_nav_brand_products"
             app:destination="@id/nav_brand_products" />
+        <action
+            android:id="@+id/action_nav_brands_to_nav_brand_products2"
+            app:destination="@id/nav_brand_products" />
     </fragment>
 
     <fragment

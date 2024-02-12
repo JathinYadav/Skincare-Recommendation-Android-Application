@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
 
-    private static final String BASE_URL = "https://skincare-recommendation-app.herokuapp.com/";
+    private static final String BASE_URL = "https://skincare-reccommendation.onrender.com/";
     private static RetrofitClient mInstance;
     private final Retrofit retrofit;
 
