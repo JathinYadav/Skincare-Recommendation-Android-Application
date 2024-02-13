@@ -148,9 +148,6 @@ def contentBasedFiltering():
    
     return jsonify(response=response, message=msg)
 
-def string_to_number(input_string):
-    return int.from_bytes(input_string.encode(), 'big')
-
 @app.route('/collaborativeBasedFiltering')
 def collaborativeBasedFiltering():
     global review_dataframe
@@ -183,7 +180,7 @@ def collaborativeBasedFiltering():
         for review in docs: # iterating thourgh the records and storing data
             item = review.to_dict()
             rating = item['rating']
-            user = string_to_number(item['user_id'])
+            user = item['user_id']
             tempList = [rating, user]
             suggestion.append(tempList) # appending the features
 
