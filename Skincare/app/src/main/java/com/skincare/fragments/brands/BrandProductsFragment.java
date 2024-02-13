@@ -94,7 +94,7 @@ public class BrandProductsFragment extends Fragment implements RecyclerViewItemI
                         for (DocumentSnapshot documentSnapshot : task.getResult()) {
                             if (documentSnapshot.exists()) {
                                 String brand = documentSnapshot.getString("brand");
-                                if (brand.equals(brand_name)) {
+                                if (brand.equalsIgnoreCase(brand_name)) {
                                     String category = documentSnapshot.getString("category");
                                     String description = documentSnapshot.getString("description");
                                     String image_url = documentSnapshot.getString("image_url");
